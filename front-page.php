@@ -139,7 +139,7 @@
            ポートフォリオをご覧いただき誠にありがとうございます！<br>
            WEBコーダーとして活動している菅沼と申します。<br>
            WEBサイト制作・コーディング等、お客様のご要望に丁寧かつ迅速に、ご満足いただけるまで誠意を持って対応させていただきます。<br>
-           githubでこの<a href="https://github.com/yoshiyuksuganuma/portfolio_source_code"><span class="color-red border-b">ポートフォリオサイトのソースコード</span></a>を公開していますので、一度ご覧いただければと思います。
+           githubでこの<a href="https://github.com/yoshiyuksuganuma/my-portfolio-code"><span class="color-red border-b">ポートフォリオサイトのソースコード</span></a>を公開していますので、一度ご覧いただければと思います。
 
          </p>
        </div>

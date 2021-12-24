@@ -1,0 +1,124 @@
+@media only screen and (max-width: 767px) {
+  #index .card__item:last-of-type {
+    margin-bottom: 0 !important;
+  }
+}
+
+.card__item {
+  width: 350px;
+}
+@media only screen and (max-width: 767px) {
+  .card__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 25px;
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  .card__list {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__list {
+    flex-direction: column;
+  }
+}
+.card__list::after {
+  content: "";
+  display: block;
+  height: 0.1px;
+  width: 350px;
+}
+@media only screen and (max-width: 767px) {
+  .card__list::after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__list::after {
+    display: none;
+  }
+}
+.card__img {
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .card__img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__img {
+    height: auto;
+    width: 100%;
+  }
+}
+.card__img--single {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.card__tit {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 24px 0 17px;
+  text-align: center;
+}
+.card__tit--single {
+  font-size: 3.2rem;
+}
+@media only screen and (max-width: 767px) {
+  .card__tit--single {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .card__tit {
+    margin: 15px 0 10px;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 767px) {
+  .card__tit {
+    line-height: 1.3333333333;
+  }
+}
+.card__tit--blog {
+  text-align: left;
+  line-height: 1.8;
+  font-weight: normal;
+}
+.card__txt {
+  line-height: 1.8;
+}
+.card__excerpt {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.card__time {
+  color: #707070;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+  .card__time {
+    margin-bottom: 30;
+  }
+}

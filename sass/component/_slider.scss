@@ -1,0 +1,61 @@
+@use "../global" as g;
+.slider {
+    max-width: 750px;
+    
+    height: 424.22px;
+    @include g.sp {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    }
+    @include g.tb {
+    height: auto;
+    width: 100%;
+    }
+    
+    &__list {
+        overflow: hidden;
+    }
+    
+     &__img {
+    width: 100%;
+    object-fit: cover;
+    @include g.sp {
+    object-fit: contain;
+    
+    }
+    
+     }
+    
+    &__dots {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    li {
+    margin-right: 9.5px;
+    &:last-of-type {
+    margin-right: 0;
+    }
+    }
+    button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      background:#c0c0c0;
+     
+      border-radius: 50%;
+    }
+     
+
+}
+
+.slick-active button{
+    background-color: g.$main_color;
+}
+.slick-list {
+   overflow: visible!important;
+}
+}
+
+    

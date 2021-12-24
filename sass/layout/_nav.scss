@@ -1,0 +1,71 @@
+@use "../global" as g;
+//ヘッダー内ナビゲーション
+.g-nav {
+    @include g.sp {
+    display: none;
+    }
+    @include g.tb {
+    display: none;
+    }
+    &__list {
+       display: flex;
+       justify-content: flex-end;
+       
+    }
+    &__item {
+      margin-right: 30px;
+      &:last-of-type {
+     margin: 0;
+      }
+       &::after {
+        content: '';
+        background: #fff;
+        height: 1px;
+        width: 0;
+        display: block;
+        transition: width .3s;
+        margin-top: 7.5px;
+       }
+       &:hover::after{
+        width: 100%;
+        transition: width .3s;
+    }
+}
+    &__link {
+       font-weight: bold;
+    }
+     
+}
+
+//sp,tb用のスタイル
+
+ .g-nav-sp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: g.$menu_bg;
+    &__list {
+    @include g.centerd_transform(xy);
+    }
+    &__item {
+    margin-bottom: 30px;
+    @include g.tb {
+    margin-bottom: 60px;
+    }
+    }
+    &__item:last-of-type {
+    margin: 0;
+    }
+    &__link {
+    font-weight: bold;
+    font-size: 1.7rem;
+    @include g.l_spacing(65);
+    @include g.tb {
+    font-size: 2.5rem;
+    }
+    }
+
+ }

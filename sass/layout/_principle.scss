@@ -1,0 +1,43 @@
+@use "../global" as g;
+.principle {
+   @include g.background_img('bg-circle.svg');
+   background-size: cover;
+   height: 613px;
+   position: relative;
+   background-position: center;
+   @include g.sp {
+   @include g.background_img('bg-circle-sp.svg');
+   background-size: contain;
+   }
+   @include g.tb {
+   @include g.background_img('bg-circle-sp.svg');
+   background-size: contain;
+   }
+    
+   &__inner {
+    @include g.centerd_transform(xy);
+    width: 100%;
+   }
+   &__lead {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 30px 0 50px;
+    @include g.sp {
+    @include g.l_height(48,32);
+    margin: 30px 0 43px;
+    }
+     
+    
+   }
+   &__txt {
+      font-weight: 300;
+    @include g.l_height(27,15);
+    @include g.sp {
+    @include g.l_height(25,14);
+    }
+   }
+   &__underline {
+    background: linear-gradient(transparent 75%, #f5f534 0%);
+    
+   }
+}

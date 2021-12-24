@@ -1,0 +1,9 @@
+.thanks-inner {
+  line-height: 2;
+  text-align: center;
+}
+.thanks-inner__link {
+  color: #391E88;
+  display: block;
+  margin: 50px 0 100px;
+}

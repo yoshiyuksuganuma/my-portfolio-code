@@ -1,0 +1,19 @@
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 25px;
+}
+.card__img {
+  width: 350px;
+  height: 220px;
+  object-fit: contain;
+}
+.card__tit {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 24px 0 17px;
+}
+.card__txt {
+  line-height: 1.8;
+  text-align: left;
+}

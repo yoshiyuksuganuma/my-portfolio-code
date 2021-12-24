@@ -1,0 +1,135 @@
+@use "../global" as g;
+.contact-form {
+    @include g.sp {
+        padding: 0 20px;
+    }
+    @include g.tb {
+        padding: 0 100px;
+    }
+    &__inner {
+        background: #f7f7f7;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto 100px auto;
+        padding: 90px;
+        @include g.sp {
+        padding: 30px;
+        }
+        @include g.tb {
+        padding: 60px;
+        }
+    }
+    &__lead{
+    margin: 100px 0 40px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    @include g.sp {
+    @include g.l_height(23,14);
+    font-size: 1.3rem;
+    padding: 0 20px;
+    margin: 65px 0 30px;
+    }
+    }
+    &__checkbox-wrap {
+    margin-bottom: 30px;
+    span {
+        margin: 0;
+        
+        }
+    label {
+    margin-right: 30px;
+    }
+    }
+     
+    &__input {
+    display: block;
+    border: 1px solid #aaaaaa;
+    background: #fff;
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    &:focus {
+    outline: 1.5px solid g.$main_color;
+    } 
+    }
+    &__input-wrap {
+    margin-bottom: 30px;
+    
+    }
+    &__input-wrap:nth-of-type(7) {
+    margin-bottom: 80px;
+    @include g.sp {
+    margin-bottom: 50px;
+    }
+    }
+    &__textarea {
+    display: block;
+    border: 1px solid #aaaaaa;
+    background: #fff;
+    max-width: 601px;
+    width: 100%;
+    height: 255px;
+    padding: 10px;
+    @include g.sp {
+    height: 200px;
+    }
+    &:focus {
+    outline: 1.5px solid g.$main_color;
+    } 
+    }
+    &__label {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    @include g.sp {
+    font-size: 1.5rem;
+    }
+    }
+    &__required {
+    margin-left: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+    &__radio {
+    input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #FDFDFD;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    vertical-align: -4px;
+    font-weight: 300;
+    &:checked {
+        appearance: none;
+        background-color: g.$main_color;
+        border: 4px solid #fff;
+        box-shadow: 0 0 0 1px #333;
+    }
+    }
+    }
+     
+}
+
+
+//wpcf7が出力するラジオボタンのスタイルを上書き
+.wpcf7-list-item {
+    @include g.sp {
+   display: block!important;
+   margin-bottom: 15px!important;
+    }
+    @include g.tb {
+   display: block!important;
+   margin-bottom: 15px!important;
+    }
+    
+}
+
+//必須項目のエラーメッセージ
+.wpcf7-not-valid-tip {
+margin-top: 7px;
+font-size: 1.3rem;
+}

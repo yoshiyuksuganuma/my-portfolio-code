@@ -1,0 +1,115 @@
+@use "../global" as g;
+
+
+#index .card {
+ &__item:last-of-type {
+   @include g.sp {
+   margin-bottom: 0!important;
+   }
+ }
+}
+
+.card {
+  &__item {
+    width: 350px;
+    @include g.sp {
+    width: 100%;
+    margin-bottom: 30px;
+     
+    }
+    @include g.tb {
+    width: 100%;
+    margin-bottom: 30px;
+    
+    }
+  
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 25px;
+    text-align: left;
+    @include g.sp {
+     flex-direction: column;
+     
+    }
+    @include g.tb {
+      flex-direction: column;
+     
+    }
+    //space-between左寄せのためのダミーブロック
+    &::after{
+      content: "";
+      display: block;
+      height: 0.1px;
+      width: 350px;
+      @include g.sp {
+      display: none;
+      }
+      @include g.tb{
+      display: none;
+      }
+}
+  }
+  &__img {
+     width: 350px;
+     height: 220px;
+     object-fit: cover;
+     display: block;
+     @include g.sp {
+     width: 100%;
+    height: auto;
+     }
+     @include g.tb {
+    height: auto;
+    width: 100%;
+     }
+     &--single {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+     }
+     
+     }
+  &__tit {
+     font-size: 1.8rem;
+     font-weight: bold;
+     margin: 24px 0 17px;
+     text-align: center;
+     &--single {
+     font-size: 3.2rem;
+     @include g.sp {
+       font-size: 2.3rem;
+     }
+     }
+     @include g.sp {
+    margin: 15px 0 10px;
+    @include g.sp {
+    @include g.l_height(20,15);
+    }
+     }
+     &--blog {
+     text-align: left;
+     @include g.l_height(27,15);
+     font-weight: normal;
+     }
+  }
+   
+  &__txt {
+    @include g.l_height(27,15);
+  }
+  &__excerpt {
+      margin-top: 20px;
+      @include g.l_height(27,15);
+  }
+  &__time {
+    color: #707070;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: inline-block;
+    @include g.sp {
+    margin-bottom: 30;
+    }
+  }
+}

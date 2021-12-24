@@ -1,0 +1,19 @@
+.pagination {
+  margin-bottom: 70px;
+}
+.pagination ul.page-numbers {
+  display: flex;
+  justify-content: flex-start;
+}
+.pagination ul.page-numbers li {
+  margin-right: 20px;
+}
+.pagination ul.page-numbers li:last-of-type {
+  margin-right: 0;
+}
+.pagination .current {
+  background: #391E88;
+  color: #fff;
+  border-radius: 50%;
+  padding: 6px 11px;
+}

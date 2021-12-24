@@ -1,0 +1,2 @@
+.page-top{position:fixed;width:50px;height:50px;border-radius:50%;background:#391e88;right:25px;bottom:60px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}@media only screen and (max-width:767px){.page-top{display:none!important}}.fa-arrow-up{color:#fff;font-size:2.4rem}
+/*# sourceMappingURL=_page-top.min.css.map */

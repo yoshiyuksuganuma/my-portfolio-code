@@ -1,0 +1,17 @@
+@use "../global" as g;
+html {
+    font-size: 62.5%;
+}
+body {
+     font-size: 1.5rem;
+     color: #333;
+     @include g.l_spacing(50);
+     font-family: "Montserrat","ヒラギノ角ゴシック",sans-serif;
+     @include g.sp {
+     font-size: 1.4rem;
+     }
+
+}
+img {
+    width: 100%;
+}

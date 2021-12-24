@@ -1,0 +1,20 @@
+@use "../global" as g;
+.page-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: g.$main_color;
+    right: 25px;
+    bottom: 60px;
+    @include g.centerd_flex;
+    @include g.sp {
+    display: none!important;
+    }
+    
+     
+}
+.fa-arrow-up {
+    color: #fff;
+    font-size: 2.4rem;
+}

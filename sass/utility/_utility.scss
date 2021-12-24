@@ -1,0 +1,53 @@
+@use "../global" as g;
+.br-tb {
+display: none;
+@include g.sp {
+display: inline;
+}
+}
+.color-red {
+color: #F02A2A;
+}
+.border {
+border: 1px solid #ddd;
+}
+ 
+.justify-c {
+justify-content: center;
+}
+
+.mb-0 {
+margin-bottom: 0;
+}
+
+.mb-50 {
+margin-bottom: 50px;
+}
+
+.no-scroll {
+overflow: hidden;
+}
+
+.d-block {
+ display: block!important;
+}
+.txt-center {
+text-align: center;
+}
+.txt-left {
+text-align: left!important;
+}
+
+ 
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.border-b {
+border-bottom: 1px solid red;
+}
+
+ 
+ 

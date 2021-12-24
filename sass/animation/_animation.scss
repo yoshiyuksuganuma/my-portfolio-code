@@ -1,0 +1,22 @@
+//メインビジュアルイラストアニメーション
+@keyframes bg-scale {
+    0% { transform: translateY(0) }
+    33.33333% { transform: translateY(-30px) }
+    66.66667% { transform: translateY(0) }
+    100% { transform: translateY(0) }
+}
+
+//メインビジュアルスクロールバーアニメーション
+@keyframes moveY {
+    0%{       transform: translatex(-80px);  
+              
+      }
+     
+    50%{      transform: translatex(0px);
+      
+      }       
+    
+    100%{     transform: translatex(80px); 
+       
+      }
+  }

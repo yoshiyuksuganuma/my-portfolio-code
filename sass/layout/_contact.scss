@@ -1,0 +1,18 @@
+@use "../global" as g;
+.contact {
+    @include g.centerd_flex;
+    &__bg {
+    background: #F7F7F7;
+    }
+    &__inner {
+        padding: 77.5px 0;
+    }
+    
+    &__lead {
+    text-align: center;
+    margin: 35px 0 30px;
+    @include g.sp {
+    @include g.l_height(25,14);
+    }
+    }
+}

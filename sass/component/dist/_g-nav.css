@@ -1,0 +1,22 @@
+.g-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 30px;
+}
+.g-nav__item::after {
+  content: "";
+  background: #fff;
+  height: 1px;
+  width: 0;
+  display: block;
+  transition: width 0.3s;
+  margin-top: 7.5px;
+}
+.g-nav__item:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.g-nav__link {
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}

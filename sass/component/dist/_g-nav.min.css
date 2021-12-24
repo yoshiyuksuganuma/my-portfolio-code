@@ -1,0 +1,2 @@
+.g-nav__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;gap:0 30px}.g-nav__item::after{content:"";background:#fff;height:1px;width:0;display:block;-webkit-transition:width .3s;transition:width .3s;margin-top:7.5px}.g-nav__item:hover::after{width:100%;-webkit-transition:width .3s;transition:width .3s}.g-nav__link{font-weight:700;letter-spacing:.06em}
+/*# sourceMappingURL=_g-nav.min.css.map */

@@ -1,0 +1,13 @@
+.footer {
+  background: #120E19;
+  text-align: center;
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+}
+.footer__small {
+  color: #A798B7;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 20px;
+}

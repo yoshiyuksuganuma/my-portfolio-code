@@ -1,0 +1,24 @@
+@use "../global" as g;
+.pagination {
+    margin-bottom: 70px;
+    
+    ul.page-numbers {
+      display: flex;
+      justify-content: flex-start;
+      li {
+        margin-right: 20px;
+        &:last-of-type {
+        margin-right: 0;
+        }
+      }
+    }
+     
+    .current {
+    background: g.$main_color;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px 11px;
+    }
+    
+     
+}

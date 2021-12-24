@@ -1,0 +1,52 @@
+@use "../global" as g;
+.m-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 100px auto;
+    text-align: center;
+    @include g.sp {
+    padding: 0 5.3333%;
+    margin: 0 auto 40px auto;
+    }
+    @include g.tb {
+    padding: 0 20%;
+    margin: 0 auto 80px auto;
+    
+    }
+    
+    
+}
+.l-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    text-align: center;
+    @include g.sp {
+        padding: 0 5.3333%;
+        margin: 0 auto 40px auto;
+        }
+    @include g.tb {
+        padding: 0 20%;
+        margin: 0 auto 80px auto;
+        }
+   
+}
+.section__tit {
+    color: g.$main_color;
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    @include g.sp {
+    font-size: 3rem;
+    }
+    
+}
+.section__tit-sub {
+    color: g.$main_color;
+    font-size: 1.3rem;
+    @include g.l_spacing(100);
+    margin-bottom: 30px;
+    @include g.sp {
+    font-size: 1.3rem;
+    }
+}

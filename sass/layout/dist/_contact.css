@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__bg {
+  background: #F7F7F7;
+}
+.contact__inner {
+  padding: 77.5px 0;
+}
+.contact__lead {
+  text-align: center;
+  margin: 35px 0 30px;
+}
+@media only screen and (max-width: 767px) {
+  .contact__lead {
+    line-height: 1.7857142857;
+  }
+}

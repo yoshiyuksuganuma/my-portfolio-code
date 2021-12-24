@@ -1,0 +1,35 @@
+@use "../global" as g;
+.scrollbar{
+    position: absolute;
+    width: 144px;   
+    bottom: 65px;
+    right: -41px;
+    display: flex;
+    align-items: center;
+     transform: rotate(90deg);
+     @include g.sp {
+      right: -50px;
+     }
+    span {
+    display: inline-block;
+    }
+    &__txt {
+    font-size: 1.2rem;
+    @include g.l_spacing(80);
+    margin-right: 10px;
+    font-weight: bold;
+    }
+    &__line {
+        overflow: hidden;
+        
+    &:after {
+        display: block;
+        content: '';
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        animation: moveY 2s infinite ease;
+    }
+    }
+     
+}

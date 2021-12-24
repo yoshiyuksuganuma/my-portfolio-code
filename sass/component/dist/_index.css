@@ -1,0 +1,144 @@
+.site-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-btn {
+  width: 220px;
+  height: 60px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.link-btn--border {
+  border: 1px solid #fff;
+}
+
+.link-btn--bg {
+  background: linear-gradient(to right, #7633A4 50%, #250D65);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.scrollbar {
+  position: absolute;
+  width: 144px;
+  bottom: 65px;
+  right: -41px;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.scrollbar span {
+  display: inline-block;
+}
+.scrollbar__txt {
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.scrollbar__line {
+  overflow: hidden;
+}
+.scrollbar__line:after {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  animation: moveY 2s infinite ease;
+}
+@keyframes moveY {
+  0% {
+    transform: translatex(-80px);
+  }
+  50% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(80px);
+  }
+}
+
+.slider {
+  width: 750px;
+  height: 424.22px;
+}
+.slider__list {
+  overflow: hidden;
+}
+.slider__img {
+  width: 100%;
+  object-fit: cover;
+}
+.slider__dots {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 9.5px;
+  margin-top: 5px;
+}
+.slider__dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background: #c0c0c0;
+  border-radius: 50%;
+}
+.slider .slick-active button {
+  background-color: #391E88;
+}
+.slider .slick-list {
+  overflow: visible !important;
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 25px;
+  text-align: left;
+}
+.card__img {
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
+}
+.card__tit {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 24px 0 17px;
+}
+.card__txt {
+  line-height: 1.8;
+}
+.card__excerpt {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.card__time {
+  color: #707070;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+.page-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #391E88;
+  right: 25px;
+  bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-arrow-up {
+  color: #fff;
+  font-size: 2.4rem;
+}

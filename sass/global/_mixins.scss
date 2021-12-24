@@ -1,0 +1,65 @@
+@use "variable" as v;
+
+$breakpoints: (
+ sp: 767px,
+ tb: 768px,
+ pc: 1199px
+  
+  );
+
+
+@mixin sp {
+  @media only screen and (max-width: map-get($breakpoints, sp)) {
+    @content;
+  }
+}
+ 
+@mixin tb {
+  @media only screen and (min-width: map-get($breakpoints, tb)) and (max-width: map-get($breakpoints, pc)) {
+    @content;
+  }
+}
+ 
+ 
+
+@mixin background_img($file_name) {
+    background-image: url(v.$path_img + $file_name);
+    background-repeat: no-repeat;
+}
+
+//flexを使用した上下中央寄せ 親要素に指定
+@mixin centerd_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+//transformを使用した中央寄せ、目的に応じて引数にxy,x,yのいずれかを渡して指定
+@mixin centerd_transform($direction) {
+	position: absolute;
+	@if $direction==xy or yx {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+  @if $direction==x {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@if $direction==y {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+//adobe XD用のline-heightの計算
+@mixin l_height($height,$f_size) {
+ line-height: $height / $f_size;
+}
+//adobe XD用のletter-spacingの計算
+@mixin l_spacing($space) {
+    letter-spacing: $space / 1000 + em;
+}
+ 
+ 

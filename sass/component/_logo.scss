@@ -1,0 +1,9 @@
+@use "../global" as g;
+
+.site-logo {
+   font-size: 2rem;
+   font-weight: bold;
+   @include g.sp {
+   font-size: 1.8rem;
+   }
+}

@@ -121,7 +121,9 @@
      <h3 class="section__tit-sub">私について</h3>
      <div class="about__inner">
        <div class="about__sns">
-         <div class="about__img"></div>
+         <div class="about__img-wrap">
+           <div class="about__img"></div>
+         </div>
          <div class="about__icons-bg">
            <div class="about__sns-icons">
              <a href="https://twitter.com/yoshisuga4"><i class="fab fa-twitter"></i></a>

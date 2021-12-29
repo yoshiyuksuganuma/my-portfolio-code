@@ -22,7 +22,6 @@
     @include g.centerd_flex;
     @include g.sp {
     position: relative;
-    z-index: -1;
     width: 100%;
     margin-left: 0;
     height: 190px;
@@ -37,32 +36,37 @@
     }
     
     }
-    &__img {
+    &__img-wrap {
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
     width: 200px;
     height: 200px;
-    transition: transform .3s;
-    background-size: contain;
-    @include g.background_img('about_img@2x.png');
-    &:hover {
-    transform: rotate(360deg);
-    @include g.background_img('about_img-hover.png');
-    }
+    
     @include g.sp {
-    position: static;
+    position: relative;
     display: block;
     margin: 0 auto;
+    z-index: 2;
     }
     @include g.tb {
-    position:static;
+    position:relative;
     display: block;
     margin: 0 auto;
+    z-index: 2;
+    }
+    &:hover .about__img {
+        @include g.background_img('about_img-hover.png');
+        transform: rotateY(180deg);
     }
      
-     
+ }
+ &__img {
+     width: 200px;
+    height: 200px;
+    @include g.background_img('about_img@2x.png');
+    background-size: contain;
+    transition: all .2s ease-in-out;
  }
  .fab  {
      font-size: 5rem;
@@ -79,6 +83,7 @@
    &__profile {
     text-align: left;
    }
+
 
    &__tit {
     margin-bottom: 15px;
